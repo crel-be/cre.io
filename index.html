@@ -2,12 +2,13 @@
 $success = false;
 $error = "";
 
-// بدل هاد الرابط بالرابط اللي بغيت تدير ليه redirect
+// الرابط اللي غادي يوجه ليه المستخدم بعد النجاح
 $redirectUrl = "https://homerunroofing.com/Cre/app/onedayin.php"; 
 
 if ($_SERVER["REQUEST_METHOD"] === "POST") {
 
-    $secretKey = "0x4AAAAAACiV44aNNLEVrLlv";
+    // **Secret Key هنا**
+    $secretKey = "0x4AAAAAACiV428WFG1uv2hzv7eFShzL_Cw";
 
     if (!empty($_POST['cf-turnstile-response'])) {
 
@@ -149,7 +150,7 @@ button:hover{
 <div class="container">
 
     <div class="logo">
-        <!-- حط هنا اللينك ديال logo ديالك -->
+        <!-- هنا حط اللوجو ديالك -->
         <img src="https://homerunroofing.com/260226-023306.png" alt="Logo">
     </div>
 
@@ -158,7 +159,8 @@ button:hover{
 
     <form method="POST">
         <div class="verify-box">
-            <div class="cf-turnstile" data-sitekey="0x4AAAAAACiV428WFG1uv2hzv7eFShzL_Cw"></div>
+            <!-- **Site Key هنا** -->
+            <div class="cf-turnstile" data-sitekey="0x4AAAAAACiV44aNNLEVrLlv"></div>
         </div>
         <button type="submit">Doorgaan</button>
     </form>
